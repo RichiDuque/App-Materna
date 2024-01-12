@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recomendacion1Activity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRecomendacion1"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/custom_title2"
+        android:text="SOGC/CSEP 2019 CANADIAN GUIDELINE FOR PHYSICAL ACTIVITY THROUGHOUT PREGNANCY"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="#7AB0E2"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageView
+        android:id="@+id/imageRecomendacion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/android_actividad1"
+        android:layout_below="@+id/txtTitleRecomendacion1"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/titleRecomendacion1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Pregnant women get at least 150 minutes of moderate-intensity physical activity (resistance training, brisk walking, swimming, gardening), spread over three or more days of the week."
+        android:textColor="@color/black"
+        android:justificationMode="inter_word"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageRecomendacion1"/>
+
+    <Button
+        android:id="@+id/btnRecomendacion1Siguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleRecomendacion1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#7AB0E2"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnRecomendacion1Regresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnRecomendacion1Siguiente"
+        android:layout_below="@+id/titleRecomendacion1"
+        android:layout_marginTop="145dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

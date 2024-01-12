@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recomendacion2Activity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRecomendacion2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/custom_title2"
+        android:text="SOGC/CSEP 2019 CANADIAN GUIDELINE FOR PHYSICAL ACTIVITY THROUGHOUT PREGNANCY"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="#7AB0E2"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageView
+        android:id="@+id/imageRecomendacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/android_actividad3"
+        android:layout_below="@id/txtTitleRecomendacion2"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/titleRecomendacion2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Physical activity is now seen as a critical part of a healthy pregnancy. Following the guideline can reduce the risk of pregnancy-related illnesses such as depression, by at least 25%, and of developing gestational diabetes, high blood pressure and preeclampsia by 40%."
+        android:textColor="@color/black"
+        android:justificationMode="inter_word"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageRecomendacion2"/>
+
+    <Button
+        android:id="@+id/btnRecomendacion2Siguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleRecomendacion2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#7AB0E2"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnRecomendacion2Regresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnRecomendacion2Siguiente"
+        android:layout_below="@+id/titleRecomendacion2"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroduccionActivityEs"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleIntroEs"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:backgroundTint="#D37AE2"
+        android:background="@drawable/custom_title2"
+        android:text="FORMULARIO DE CONSULTA DEL PROVEEDOR DE SERVICIOS DE SALUD PARA LA ACTIVIDAD \nFÍSICA PRENATAL"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageIntroEs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/doctor"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtTitleIntroEs"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textIntroEs"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Su paciente desea comenzar o continuar siendo físicamente activa durante el embarazo. Su paciente respondió 'Sí' a una o más preguntas en el Cuestionario de Actividad Física para el embarazo y se le ha pedido que consulte a su prestador de atención medica.\n
+\nLa actividad física es segura para la mayoría de las embarazadas y tiene muchos beneficios para la salud. Sin embargo, algunas pacientes puede necesitar una evaluación exhaustiva antes de realizar actividad física durante el embarazo."
+        android:justificationMode="inter_word"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/imageIntroEs"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="Correo electrónico trabajador de la salud"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textIntroEs"/>
+
+    <EditText
+        android:id="@+id/editEmailTrEs"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/custom_datos"
+        android:padding="10dp"
+        android:hint="Correo electrónico"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtEmail"/>
+
+    <Button
+        android:id="@+id/btnIntroSiguienteEs"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmailTrEs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#D37AE2"
+        android:text="Siguiente"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnIntroRegresarEs"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnIntroSiguienteEs"
+        android:layout_below="@+id/editEmailTrEs"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

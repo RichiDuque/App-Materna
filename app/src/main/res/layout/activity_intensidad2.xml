@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intensidad2Activity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleIntesidad2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/custom_title"
+        android:text="GET ACTIVE
+        QUESTIONNAIRE FOR PREGNANCY"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/textIntensidad2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="During the same week, please describe ON AVERAGE how often and for how long you engage in physical activity of a light, moderate or vigorous intensity. See definitions for intensity below the box."
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtTitleIntesidad2"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIntensidad2"
+        android:layout_width="360dp"
+        android:layout_height="260dp"
+        android:backgroundTint="#d9d9d9"
+        android:layout_below="@+id/textIntensidad2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/intensidad1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How physically active have you been during this pregnancy?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/intensidad2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequency"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/intensidad1_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intensidad2_2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginLeft="30dp"/>
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1-2"
+                    android:layout_marginLeft="30dp"/>
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3-4"
+                    android:layout_marginLeft="30dp"/>
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5-7"
+                    android:layout_marginLeft="30dp"/>
+            </RadioGroup>
+            <TextView
+                android:id="@+id/intensidad3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intensity"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/radioGroup1_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intensidad3_2"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioButtonLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Light"
+                    android:layout_marginLeft="30dp"/>
+                <RadioButton
+                    android:id="@+id/radioButtonModerate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderate"
+                    android:layout_marginLeft="30dp"/>
+                <RadioButton
+                    android:id="@+id/radioButtonVigorous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vigorous"
+                    android:layout_marginLeft="30dp"/>
+            </RadioGroup>
+            <TextView
+                android:id="@+id/intensidad4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/radioGroup2_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup3_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/intensidad4_2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-20"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/radioButton30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20-30"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/radioButton60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="31-60"
+                    android:layout_marginLeft="20dp"/>
+                <RadioButton
+                    android:id="@+id/radioButton70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60+"
+                    android:layout_marginLeft="20dp"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textLigth_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light intensity: "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/cardIntensidad2"/>
+
+    <TextView
+        android:id="@+id/textLigth2_2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="You are moving, but you do not sweat or breathe hard, such as walking to get the mail or light gardening."
+        android:textColor="@color/black"
+        android:layout_below="@id/textLigth_2"/>
+    <TextView
+        android:id="@+id/textModerate_2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="Moderate intensity:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/cardIntensidad2"
+        android:layout_toRightOf="@+id/textLigth_2"/>
+
+    <TextView
+        android:id="@+id/textModerate2_2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Your heart rate goes up and you may sweat or breathe hard. You can talk, but could not sing. Examples include brisk walking."
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/textLigth2_2"
+        android:layout_below="@id/textModerate_2"/>
+    <TextView
+        android:id="@+id/textVigorous_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vigorous intensity:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/textLigth2_2"/>
+
+    <TextView
+        android:id="@+id/textVigorous2_2"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Your heart rate goes up substantially, you feel hot and sweaty, and you cannot say more than a few words without pausing to breathe. Examples include fast stationary cycling and running."
+        android:textColor="@color/black"
+        android:layout_below="@id/textVigorous_2"/>
+
+    <Button
+        android:id="@+id/btnIntensidadSiguiente_2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textVigorous2_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#a97ae2"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnIntensidadRegresar_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnIntensidadSiguiente_2"
+        android:layout_below="@+id/textVigorous2_2"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>

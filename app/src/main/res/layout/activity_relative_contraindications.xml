@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeContraindicationsActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRelative"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:backgroundTint="#D37AE2"
+        android:background="@drawable/custom_title2"
+        android:text="HEALTH CARE PROVIDER CONSULTATION FORM FOR PRENATAL PHYSICAL
+        ACTIVITY"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/titleRelative"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Relative contraindications"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtTitleRelative"/>
+
+
+    <TextView
+        android:id="@+id/textRelative"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Pregnant women with these conditions should discuss advantages and disadvantages of physical activity with you. They should continue physical activity, but modify exercises to reduce intensity and/or duration."
+        android:justificationMode="inter_word"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/titleRelative"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRelative1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="recurrent pregnancy loss"
+        android:layout_below="@id/textRelative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:id="@+id/checkBoxRelative2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="gestational hypertension"
+        android:layout_below="@id/checkBoxRelative1"
+        android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:id="@+id/checkBoxRelative3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="a history of spontaneous preterm birth"
+        android:layout_below="@id/checkBoxRelative2"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRelative4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="mild/moderate cardiovascular or respiratory disease"
+        android:layout_below="@id/checkBoxRelative3"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRelative5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="symptomatic anemia"
+        android:layout_below="@id/checkBoxRelative4"
+        android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:id="@+id/checkBoxRelative6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="malnutrition"
+        android:layout_below="@id/checkBoxRelative5"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRelative7"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="eating disorder"
+        android:layout_below="@id/checkBoxRelative6"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRelative8"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="twin pregnancy after the 28th week"
+        android:layout_below="@id/checkBoxRelative7"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRelative9"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="other significant medical conditions"
+        android:layout_below="@id/checkBoxRelative8"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <Button
+        android:id="@+id/btnRelativeSiguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxRelative9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#D37AE2"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnRelativeRegresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnRelativeSiguiente"
+        android:layout_below="@+id/checkBoxRelative9"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

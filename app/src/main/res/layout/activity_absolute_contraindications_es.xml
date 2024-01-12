@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AbsoluteContraindicationsActivityEs"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleProvider"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:backgroundTint="#D37AE2"
+        android:background="@drawable/custom_title2"
+        android:text="FORMULARIO DE CONSULTA DEL PROVEEDOR DE SERVICIOS DE\nSALUD PARA LA ACTIVIDAD \nFÍSICA PRENATAL"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/titleAbsolute"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Contraindicaciones Absolutas"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtTitleProvider"/>
+
+
+    <TextView
+        android:id="@+id/textAbsolute"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:text="Las mujeres embarazadas con estas condiciones deben continuar con las actividades de la vida diaria, pero no deben realizar actividades físicas moderadas o vigorosas:"
+        android:justificationMode="inter_word"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/titleAbsolute"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Rotura prematura de membranas"
+        android:layout_below="@id/textAbsolute"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Parto prematuro"
+        android:layout_below="@id/checkBoxAbsolute1"
+        android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Hemorragia vaginal persistente e inexplicable"
+        android:layout_below="@id/checkBoxAbsolute2"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Placenta previa después de 28 semanas de gestación"
+        android:layout_below="@id/checkBoxAbsolute3"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Preeclampsia"
+        android:layout_below="@id/checkBoxAbsolute4"
+        android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Cuello uterino incompetente"
+        android:layout_below="@id/checkBoxAbsolute5"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute7"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Restricción del crecimiento intrauterino"
+        android:layout_below="@id/checkBoxAbsolute6"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute8"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Embarazo múltiple de alto orden (por ejemplo, trillizos)"
+        android:layout_below="@id/checkBoxAbsolute7"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute9"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Diabetes de tipo I no controlada"
+        android:layout_below="@id/checkBoxAbsolute8"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute10"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Hipertensión no controlada"
+        android:layout_below="@id/checkBoxAbsolute9"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute11"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Enfermedad tiroidea no controlada"
+        android:layout_below="@id/checkBoxAbsolute10"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxAbsolute12"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Otros trastornos cardiovasculares, respiratorio o sistémico grave"
+        android:layout_below="@id/checkBoxAbsolute11"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnAbsoluteSiguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxAbsolute12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#D37AE2"
+        android:text="Siguiente"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnAbsoluteRegresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnAbsoluteSiguiente"
+        android:layout_below="@+id/checkBoxAbsolute12"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

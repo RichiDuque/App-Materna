@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recomendacion5Activity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRecomendacion5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="RECOMMENDATIONS"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="#E28181"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imgSeñal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="50dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/android_recomendacion_se_ala3" />
+    <ImageView
+        android:id="@+id/imgCaminar"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:elevation="50dp"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/android_recomendacion_caminando"
+        android:layout_below="@id/txtTitleRecomendacion5"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRecomendacion5"
+        android:layout_width="wrap_content"
+        android:layout_height="460dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FAE8E8"
+        app:cardCornerRadius="30dp"
+        android:elevation="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_below="@+id/txtTitleRecomendacion5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textRecomendacion5"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Pelvic floor muscle training (e.g., Kegel exercises) may be performed on a daily basis to reduce the risk of urinary incontinence. Instruction in proper technique is recommended
+to obtain optimal benefits.\n\nPregnant women who experience light-headedness, nausea or feel unwell when they exercise flat on their back should modify their exercise position to avoid the supine position."
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:textSize="17dp"
+                android:layout_marginTop="180dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnRecomendacion5Siguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardRecomendacion5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#E28181"
+        android:text="Finish"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnRecomendacion5Regresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnRecomendacion5Siguiente"
+        android:layout_below="@+id/cardRecomendacion5"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

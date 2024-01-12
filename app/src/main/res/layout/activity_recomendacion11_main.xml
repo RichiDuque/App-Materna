@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recomendacion1_1MainActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRecomendacion1.1"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/custom_title2"
+        android:text="SOGC/CSEP 2019 CANADIAN GUIDELINE FOR PHYSICAL ACTIVITY THROUGHOUT PREGNANCY"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="#7AB0E2"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageView
+        android:id="@+id/imageRecomendacion1.1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/android_actividad2"
+        android:layout_below="@+id/txtTitleRecomendacion1.1"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textRecomendacion1.1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:text="If you are planning to take part in vigorous-intensity physical activity, or be physically active at elevations above 2500 m (8200 feet), then consult with your health care provider. If you have any questions about physical activity during pregnancy, consult a Qualified Exercise Professional or your health care provider beforehand. This can help ensure that your physical activity is safe and suitable for you."
+        android:justificationMode="inter_word"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageRecomendacion1.1"/>
+
+    <Button
+        android:id="@+id/btnRecomendacion11Siguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textRecomendacion1.1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#7AB0E2"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnRecomendacion11Regresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnRecomendacion11Siguiente"
+        android:layout_below="@+id/textRecomendacion1.1"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

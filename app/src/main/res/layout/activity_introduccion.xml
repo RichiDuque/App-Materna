@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroduccionActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleIntro"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:backgroundTint="#D37AE2"
+        android:background="@drawable/custom_title2"
+        android:text="HEALTH CARE PROVIDER CONSULTATION FORM FOR PRENATAL PHYSICAL
+        ACTIVITY"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/doctor"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtTitleIntro"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textIntro"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Your patient wishes to begin or continue to be physically active during pregnancy. Your patient answered 'Yes' to one or more questions on the Get Active. Questionnaire for Pregnancy and has been asked to seek your advice.\n
+        \nPhysical activity is safe for most pregnant individuals and has many health benefits. However, a small number of patients may need a thorough evaluation before taking part in physical activity during pregnancy."
+        android:justificationMode="inter_word"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/imageIntro"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="Email health worker"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textIntro"/>
+
+    <EditText
+        android:id="@+id/editEmailTr"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/custom_datos"
+        android:padding="10dp"
+        android:hint="Email"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtEmail"/>
+
+    <Button
+        android:id="@+id/btnIntroSiguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmailTr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#D37AE2"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnIntroRegresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnIntroSiguiente"
+        android:layout_below="@+id/editEmailTr"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

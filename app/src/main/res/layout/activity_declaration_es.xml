@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeclarationActivityEs"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRadio"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/custom_title"
+        android:text="CUESTIONARIO\nGET ACTIVE PARA\nEMBARAZO"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/titleDeclaration"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Declaración"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtTitleRadio"/>
+
+
+    <TextView
+        android:id="@+id/textDeclaration"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Según mi leal saber y entender, toda la información que he proporcionado en este cuestionario es correcta. Si mi salud cambia, volveré a completar este cuestionario."
+        android:textColor="@color/black"
+        android:justificationMode="inter_word"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/titleDeclaration"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respondí NO a todas las preguntas"
+        android:layout_below="@id/textDeclaration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textDeclaration2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Respondí SÍ a una o más preguntas en la página 1
+y hablaré con mi proveedor de atención médica antes de comenzar o continuar con la actividad física."
+        android:layout_below="@id/checkBox"
+        android:justificationMode="inter_word"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnDeclarationSiguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDeclaration2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#a97ae2"
+        android:text="Siguiente"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnDeclarationRegresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnDeclarationSiguiente"
+        android:layout_below="@+id/textDeclaration2"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

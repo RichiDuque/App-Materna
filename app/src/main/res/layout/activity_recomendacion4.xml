@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recomendacion4Activity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRecomendacion4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="RECOMMENDATIONS"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="#E28181"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imgSeñal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="50dp"
+        app:srcCompat="@drawable/android_recomendacion_se_ala2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRecomendacion4"
+        android:layout_width="wrap_content"
+        android:layout_height="460dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FAE8E8"
+        app:cardCornerRadius="30dp"
+        android:elevation="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_below="@+id/txtTitleRecomendacion4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textRecomendacion4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Physical activity should be accumulated over a minimum of three days per week; however, being active every day is encouraged."
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:textSize="17dp"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/imagePerro"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/android_recomendacion_perrito"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textRecomendacion4"/>
+
+            <TextView
+                android:id="@+id/textRecomendacion4.1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Pregnant women should incorporate a variety of aerobic and resistance training activities to achieve greater benefits. Adding yoga and/or gentle stretching may also be beneficial."
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:textSize="17dp"
+                android:layout_marginTop="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textRecomendacion4"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnRecomendacion4Siguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardRecomendacion4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#E28181"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnRecomendacion4Regresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnRecomendacion4Siguiente"
+        android:layout_below="@+id/cardRecomendacion4"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

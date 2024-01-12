@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioButton2ActivityEs"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRadio2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/custom_title"
+        android:text="CUESTIONARIO\nGET ACTIVE PARA\nEMBARAZO "
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="En este embarazo, ¿tiene alguna de las siguientes condiciones?"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtTitleRadio2"
+        android:background="@drawable/custom_datos"/>
+
+    <TextView
+        android:id="@+id/textMensaje"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Por favor, responda SÍ o NO a cada pregunta de la mejor manera que pueda"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView"/>
+    <TextView
+        android:id="@+id/textNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="No"
+        android:textColor="@color/black"
+        android:layout_below="@id/textMensaje"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/textYes"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/textYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Sí"
+        android:textColor="@color/black"
+        android:layout_below="@id/textMensaje"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/text1"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMensaje"
+        android:text="h. ¿Presión arterial alta (preeclampsia, hipertensión gestacional o hipertensión crónica inestable)?"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoH"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textYes"
+        android:layout_toEndOf="@id/text1"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:text="i. ¿Un bebé que crece lentamente (restricción del crecimiento intrauterino)?"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoI"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoH"
+        android:layout_toEndOf="@id/text2"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:text="j. ¿Sangrado inexplicable, rotura de membranas o parto antes de las 37 semanas?"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoJ"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoI"
+        android:layout_toEndOf="@id/text3"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:text="k. ¿Una placenta que cubre parcial o totalmente el cuello del útero (placenta previa)?"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoK"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoJ"
+        android:layout_toEndOf="@id/text4"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text4"
+        android:text="l. ¿Tejido cervical débil (cuello uterino incompetente)?"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoL"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoK"
+        android:layout_toEndOf="@id/text5"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text5"
+        android:text="m. ¿Un punto o cinta para reforzar el cuello del útero (cerclaje)?"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoM"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoL"
+        android:layout_toEndOf="@id/text6"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btnRadio2Siguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#a97ae2"
+        android:text="Siguiente"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btn2Regresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnRadio2Siguiente"
+        android:layout_below="@+id/text6"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

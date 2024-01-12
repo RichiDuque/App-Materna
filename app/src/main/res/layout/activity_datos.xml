@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="5dp"
+        android:layout_height="120dp"
+        android:background="#A87AE2"
+        android:layout_toLeftOf="@+id/txtTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="GET ACTIVE QUESTIONNAIRE FOR PREGNANCY"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="30dp"
+        android:textColor="#A87AE2"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDatos"
+        android:layout_width="360dp"
+        android:layout_height="390dp"
+        android:backgroundTint="#d9d9d9"
+        android:layout_below="@+id/txtTitle"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre Completo"
+                android:inputType="textPersonName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_datos"/>
+            <EditText
+                android:id="@+id/editNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Fecha Nacimiento"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:maxLines="1"
+                android:layout_below="@+id/editNombre"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_datos"/>
+
+            <Spinner
+                android:id="@+id/spinnerEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Edad"
+                android:layout_toRightOf="@+id/editNacimiento"
+                android:layout_below="@id/editNombre"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_datos"/>
+            <Spinner
+                android:id="@+id/spinner_cc"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/C.C"
+                android:layout_below="@+id/editNacimiento"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_datos"/>
+
+            <EditText
+                android:id="@+id/editDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="N° identificación"
+                android:inputType="number"
+                android:layout_below="@+id/spinnerEdad"
+                android:layout_toRightOf="@+id/spinner_cc"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_datos"/>
+
+            <Spinner
+                android:id="@+id/spinnerEscolar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Escolaridad"
+                android:layout_below="@id/spinner_cc"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_datos"/>
+
+            <EditText
+                android:id="@+id/editOcupacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ocupación"
+                android:inputType="textPersonName"
+                android:layout_below="@id/editDocumento"
+                android:layout_toRightOf="@id/spinnerEscolar"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_datos"/>
+
+            <TextView
+                android:id="@+id/txtEmbarazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semanas de embarazo"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/spinnerEscolar"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerEmbarazo"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/semanas"
+                android:layout_below="@id/editOcupacion"
+                android:layout_toRightOf="@id/txtEmbarazo"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:elevation="5dp"
+                android:padding="5dp"
+                android:background="@drawable/custom_datos"/>
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Correo electronico"
+                android:inputType="textEmailAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_datos"
+                android:layout_below="@+id/txtEmbarazo"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <CheckBox
+        android:id="@+id/checkBoxSalud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="false"
+        android:text="Soy Trabajador de la Salud"
+        android:layout_below="@id/txtIdioma"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/txtIdioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tu idioma: "
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/cardDatos"
+        android:layout_marginLeft="40dp"/>
+
+    <RadioGroup
+        android:id="@+id/groupIdioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardDatos"
+        android:layout_toRightOf="@+id/txtIdioma"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Español" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingles" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnDatosSiguiente"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="Siguiente"
+        android:textColor="@color/white"
+        android:backgroundTint="#a97ae2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/checkBoxSalud"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"/>
+
+    <Button
+        android:id="@+id/imageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="@color/purple_200"
+        android:text=" Información"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/cardDatos"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recomendacion2ActivityEs"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRecomendacion2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/custom_title2"
+        android:text="GUÍA CANADIENSE SOGC/\nCSEP 2019 PARA LA\nACTIVIDAD FÍSICA DURANTE \nEL EMBARAZO"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="#7AB0E2"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageView
+        android:id="@+id/imageRecomendacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/android_actividad3"
+        android:layout_below="@id/txtTitleRecomendacion2"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/titleRecomendacion2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="La actividad física se considera ahora una parte fundamental de un embarazo saludable. Seguir las directrices puede reducir el riesgo de enfermedades relacionadas con el embarazo, como la depresión, en al menos un 25%, y de desarrollar diabetes gestacional, hipertensión arterial y preeclampsia en un 40%."
+        android:textColor="@color/black"
+        android:justificationMode="inter_word"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageRecomendacion2"/>
+
+    <Button
+        android:id="@+id/btnRecomendacion2Siguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleRecomendacion2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#7AB0E2"
+        android:text="Siguiente"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnRecomendacion2Regresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnRecomendacion2Siguiente"
+        android:layout_below="@+id/titleRecomendacion2"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

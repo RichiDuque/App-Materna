@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recomendacion3Activity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRecomendacion3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="RECOMMENDATIONS"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="#E28181"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/imgSeñal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="50dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/android_recomendacion_se_ala1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRecomendacion3"
+        android:layout_width="wrap_content"
+        android:layout_height="460dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FAE8E8"
+        app:cardCornerRadius="30dp"
+        android:elevation="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_below="@+id/txtTitleRecomendacion3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textRecomendacion3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="All women without contraindication should be physically active throughout pregnancy. Specific subgroups were examined: \n\n•  Women who were previously inactive.\n• Women diagnosed with gestational diabetes mellitus.\n• Women categorized as overweight or obese (pre-pregnancy body mass index ≥25kg/m2).\n\n\nPregnant women should accumulate at least 150 minutes of moderate-intensity physical activity each week to achieve clinically meaningful health benefits and reductions in regnancy complications."
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:textSize="17dp"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <Button
+        android:id="@+id/btnRecomendacion3Siguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardRecomendacion3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#E28181"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnRecomendacion3Regresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnRecomendacion3Siguiente"
+        android:layout_below="@+id/cardRecomendacion3"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

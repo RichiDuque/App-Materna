@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProviderActivityEs"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleProvider"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:backgroundTint="#D37AE2"
+        android:background="@drawable/custom_title2"
+        android:text="FORMULARIO DE CONSULTA DEL PROVEEDOR DE SERVICIOS DE SALUD PARA LA ACTIVIDAD \nFÍSICA PRENATAL"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/titleProvider"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Preocupación específica de su paciente y/o de un profesional cualificado del ejercicio:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtTitleProvider"/>
+
+
+    <EditText
+        android:id="@+id/editProfesional"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleProvider"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="escriba aquí:" />
+
+    <TextView
+        android:id="@+id/textDeclaration"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Discuta las posibles preocupaciones que pueda tener sobre la actividad física con su paciente e indique en el cuadro a continuación las modificaciones que podría recomendar:"
+        android:justificationMode="inter_word"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editProfesional"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxProvider1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:textSize="13dp"
+        android:text="Actividad física sin restricciones basada en las Directrices Canadienses para la Actividad Física durante el Embarazo SOGC/CSEP 2019"
+        android:layout_below="@id/textDeclaration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:id="@+id/checkBoxProvider2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Actividad Física Progresiva"
+        android:layout_below="@id/checkBoxProvider1"
+        android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:id="@+id/checkBoxProvider3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Recomendar Evitar:"
+        android:layout_below="@id/checkBoxProvider2"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editCheck3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxProvider3"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:hint="escriba aquí:"
+        android:ems="10"
+        android:inputType="textPersonName" />
+    <CheckBox
+        android:id="@+id/checkBoxProvider4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Recomendar Incluir:"
+        android:layout_below="@id/editCheck3"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/editCheck4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxProvider4"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:hint="escriba aquí:"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+    <CheckBox
+        android:id="@+id/checkBoxProvider5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:textSize="13dp"
+        android:text="Recomendar la supervisión de un profesional del ejercicio cualificado, si es posible."
+        android:layout_below="@id/editCheck4"
+        android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:id="@+id/checkBoxProvider6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:justificationMode="inter_word"
+        android:text="Remitir a un fisioterapeuta para el dolor, el deterioro y/o una evaluación del suelo pélvico."
+        android:layout_below="@id/checkBoxProvider5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/editOtroComentario"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxProvider6"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Otros comentarios" />
+
+    <Button
+        android:id="@+id/btnProviderSiguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editOtroComentario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#D37AE2"
+        android:text="Siguiente"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnProviderRegresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnProviderSiguiente"
+        android:layout_below="@+id/editOtroComentario"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

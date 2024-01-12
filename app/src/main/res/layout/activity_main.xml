@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="5dp"
+        android:layout_height="200dp"
+        android:background="#A87AE2"
+        android:layout_toLeftOf="@+id/txtTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="GET ACTIVE QUESTIONNAIRE FOR PREGNANCY"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="40dp"
+        android:textColor="#A87AE2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/login"
+        tools:srcCompat="@drawable/login" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#e9eaff"
+        android:layout_below="@+id/imgLogin"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Al dar siguiente, estará aceptando que sus datos sean compartidos con su médico"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="#a97ae2"
+                android:text="Siguiente"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

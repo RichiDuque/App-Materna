@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRadio"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/custom_title"
+        android:text="GET ACTIVE
+        QUESTIONNAIRE FOR PREGNANCY"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/textPregunta1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Is there any other reason you are concerned about physical activity during pregnancy?"
+        android:textColor="@color/black"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtTitleRadio"/>
+
+    <EditText
+        android:id="@+id/editPregunta1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Other reason"
+        android:layout_below="@id/textPregunta1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textPregunta2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="During a typical week, what types of physical activities do you take part in (swimming, walking, resistance training, yoga)?"
+        android:textColor="@color/black"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editPregunta1"/>
+
+    <EditText
+        android:id="@+id/editPregunta2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Activity"
+        android:layout_below="@id/textPregunta2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btnTextSiguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPregunta2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#a97ae2"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnTextRegresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnTextSiguiente"
+        android:layout_below="@+id/editPregunta2"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>

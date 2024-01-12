@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioButtonActivityEs"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRadio"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/custom_title"
+        android:text="CUESTIONARIO\nGET ACTIVE PARA\nEMBARAZO "
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="En este embarazo, ¿tiene alguna de las siguientes condiciones?"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtTitleRadio"
+        android:background="@drawable/custom_datos"/>
+
+    <TextView
+        android:id="@+id/textMensaje"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Por favor, responda SÍ o NO a cada pregunta de la mejor manera que pueda"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView"/>
+    <TextView
+        android:id="@+id/textNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="No"
+        android:textColor="@color/black"
+        android:layout_below="@id/textMensaje"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/textYes"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/textYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Sí"
+        android:textColor="@color/black"
+        android:layout_below="@id/textMensaje"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/text1"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMensaje"
+        android:text="a. ¿Enfermedades respiratorias o cardiovasculares leves, moderadas o severas (por ejemplo, bronquitis crónica)?"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoA"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textYes"
+        android:layout_toEndOf="@id/text1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtnYesA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:text="b. ¿Epilepsia inestable?"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoB"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoA"
+        android:layout_toEndOf="@id/text2"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:text="c. ¿Diabetes tipo 1 no controlada o niveles de azúcar en sangre fuera de los rangos objetivo?"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoC"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoB"
+        android:layout_toEndOf="@id/text3"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:text="d. ¿Enfermedad tiroidea inestable o función tiroidea fuera de los rangos objetivo?"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoD"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoC"
+        android:layout_toEndOf="@id/text4"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text4"
+        android:text="e. ¿Trastorno(s) alimentario(s) o desnutrición?
+"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoE"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoD"
+        android:layout_toEndOf="@id/text5"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text5"
+        android:text="f. ¿Gemelos (28 semanas de embarazo o más)? ¿O está esperando trillizos o un parto múltiple superior?"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoF"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoE"
+        android:layout_toEndOf="@id/text6"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text6"
+        android:text="g. ¿Bajo número de glóbulos rojos (anemia) con altos niveles de fatiga y/o mareos?"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupoG"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoF"
+        android:layout_toEndOf="@id/text7"
+        android:orientation="horizontal"
+        android:layout_marginTop="45dp">
+
+        <RadioButton
+            android:id="@+id/rbtnYesG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnNoG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnRadioSiguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#a97ae2"
+        android:text="Siguiente"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnRegresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnRadioSiguiente"
+        android:layout_below="@+id/text7"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recomendacion3ActivityEs"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtTitleRecomendacion3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="RECOMENDACIONES"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="25dp"
+        android:textColor="#E28181"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/imgSeñal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="50dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/android_recomendacion_se_ala1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRecomendacion3"
+        android:layout_width="wrap_content"
+        android:layout_height="470dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FAE8E8"
+        app:cardCornerRadius="30dp"
+        android:elevation="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_below="@+id/txtTitleRecomendacion3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textRecomendacion3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Todas las mujeres sin contraindicación deben realizar actividad física durante todo el embarazo. Se examinaron subgrupos específicos: \n\n• Mujeres que anteriormente eran inactivas,\n• Mujeres diagnósticadas de Diabetes Mellitus gestacional.\n• Mujeres categorizadas como con sobrepeso u obesas (índice de masa corporal antes del embarazo ≥25kg/m2).\n\nLas mujeres embarazadas deben acumular al menos 150 minutos de actividad física de intensidad moderada cada semana para lograr beneficios de salud clínicamente significativos y reducciones en las complicaciones del embarazo."
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:textSize="16dp"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <Button
+        android:id="@+id/btnRecomendacion3Siguiente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardRecomendacion3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#E28181"
+        android:text="Siguiente"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnRecomendacion3Regresar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flecha"
+        android:background="@color/white"
+        android:layout_toLeftOf="@id/btnRecomendacion3Siguiente"
+        android:layout_below="@+id/cardRecomendacion3"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
